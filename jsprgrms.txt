@@ -1,0 +1,102 @@
+<script>
+var repeat , value = [];
+while(repeat != 'n')
+{
+value.push(prompt("Enter value"));
+repeat = prompt ("continue y/n");
+}
+for (i = 0 ; i<value.length ; i++)
+{
+value[i];
+document.writeln(value[i]);
+}
+</script>
+
+
+<h1> Enter Your Values </h1>
+ENTER INPUT <input id = 'txtval'>
+<button onclick = 'add()'>Click</button>
+<ul id = 'list'></ul>
+<script>
+function add()
+{
+var txtval = document.getElementById('txtval').value; 
+var listnode = document.getElementById('list');
+var linode = document.createElement("LI");
+var txtnode = document.createTextNode(txtval);
+linode.appendChild(txtnode);
+listnode.appendChild(linode);
+}
+</script>
+
+
+<html>
+<head>
+<title>URL</title>
+<script type="text/javascript">
+    function validate() {
+        var url = document.getElementById("url").value;
+        var pattern = /^https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+        if (pattern.test(url)) {
+            window.open(url);
+       
+        } 
+        else{
+            alert("Url is not valid!");
+            }
+          
+
+    }
+</script>
+
+</head>
+<body>
+URL :
+<input type="text" name="url" id="url" />
+<input type="submit" value="Check" onclick="validate();" />
+</body>
+</html>
+
+
+
+
+Enter Object <input id = 'title'>
+Enter Object <input id = 'title1'>
+<button onclick = 'Obj()';> Click </button>
+<script> 
+function Obj(){
+let A = { 
+    name: document.getElementById('title').value, 
+}; 
+  
+let B = { 
+    name1: document.getElementById('title1').value,
+}; 
+
+  
+let Sites = { ...A, ...B }; 
+
+  
+console.log(Sites)
+}
+</script>
+
+
+
+
+
+<script>
+var repeat , value = [];
+var rep , val = [];
+while(repeat != 'n')
+{
+value.push(prompt("Enter value for 1st array"));
+repeat = prompt ("continue y/n");
+}
+while(rep != 'n')
+{
+val.push(prompt("Enter value for 2 nd array"));
+rep = prompt ("continue y/n");
+}
+console.log([...value, ...val]);
+</script>
