@@ -1,3 +1,4 @@
+// Java script code for updating the user input array with +1
 <script>
 var repeat , value = [];
 while(repeat != 'n')
@@ -7,12 +8,12 @@ repeat = prompt ("continue y/n");
 }
 for (i = 0 ; i<value.length ; i++)
 {
-value[i];
+value[i]++;
 document.writeln(value[i]);
 }
 </script>
 
-
+//Javascript code for Listing
 <h1> Enter Your Values </h1>
 ENTER INPUT <input id = 'txtval'>
 <button onclick = 'add()'>Click</button>
@@ -29,20 +30,20 @@ listnode.appendChild(linode);
 }
 </script>
 
-
+//javascript code for Url check
 <html>
 <head>
 <title>URL</title>
 <script type="text/javascript">
     function validate() {
         var url = document.getElementById("url").value;
-        var pattern = /^https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+        var pattern = /https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
         if (pattern.test(url)) {
             window.open(url);
        
         } 
         else{
-            alert("Url is not valid!");
+            alert("Oops Url is not valid!");
             }
           
 
@@ -52,14 +53,16 @@ listnode.appendChild(linode);
 </head>
 <body>
 URL :
-<input type="text" name="url" id="url" />
-<input type="submit" value="Check" onclick="validate();" />
+<input   id="url" />
+<button  value="Check" onclick="validate();" ></button>
 </body>
 </html>
 
 
 
 
+
+//Javascript code for merging of objects
 Enter Object <input id = 'title'>
 Enter Object <input id = 'title1'>
 <button onclick = 'Obj()';> Click </button>
@@ -83,7 +86,7 @@ console.log(Sites)
 
 
 
-
+//Javascript code for merging of arrays
 
 <script>
 var repeat , value = [];
@@ -91,12 +94,21 @@ var rep , val = [];
 while(repeat != 'n')
 {
 value.push(prompt("Enter value for 1st array"));
-repeat = prompt ("continue y/n");
+repeat = prompt ("continue with updadting (y/n)");
 }
 while(rep != 'n')
 {
 val.push(prompt("Enter value for 2 nd array"));
-rep = prompt ("continue y/n");
+rep = prompt ("continue with updadting (y/n)");
 }
 console.log([...value, ...val]);
 </script>
+
+
+
+
+
+
+
+
+
